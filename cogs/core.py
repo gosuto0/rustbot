@@ -35,7 +35,7 @@ class CoreCog(commands.Cog):
             raidcheck = await self.bot.rust_class.raid_check()
             await self.message.edit(embed=embed)
             if raidcheck:
-                await self.message.channel.send("@everyone E13メインベースレイド!!")
+                await self.message.channel.send("@everyone getting raid")
         except Exception as e: print("Return Error: "+str(e))
         
     async def refresh_data(self):
